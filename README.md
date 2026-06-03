@@ -18,6 +18,10 @@ https://github.com/KenWuqianghao/Insert
 
 ## Build
 
+Download the latest Windows installer from:
+
+https://github.com/KenWuqianghao/insert-windows/releases/latest
+
 Install the .NET 8 Windows Desktop workload, then run from this repo:
 
 ```powershell
@@ -33,3 +37,5 @@ dotnet run --project Insert.Windows/Insert.Windows.csproj
 ## Notes
 
 This project is intended to be built and verified on Windows. The source is kept separate so the Windows release path can evolve independently from the macOS app.
+
+Release builds run on a Windows GitHub Actions runner and publish `Insert-Windows-Setup-<version>.exe`, a per-user NSIS installer.
